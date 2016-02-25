@@ -1,0 +1,85 @@
+<body class="homepage">
+	<div class="wrapper">
+		<div class="main-container">
+			<div class="head">
+				<div class="head-container">
+				    <video autoplay loop class="video-background loaded">
+					    <source src="video/Newsletter_02.webm" type="video/webm">
+					    <source src="video/Newsletter_01.mp4" type="video/mp4">
+				    </video>
+					<img src="./images/logo.png" alt="" srcset="./images/logo.png 435w, ./images/logo.png 593w" class="main-logo">
+					<div id="header-bar">
+						<div id="header-container">
+							<a href="http://furystudio.com/" title="Fury Studio" target="_blank"><img id="furystudio_logo" src="./images/furystudio_logo.png"></a>
+							<ul class="languages">
+							    <li <?php if ($_SESSION['language'] == 'bg'): ?>class="active"<?php endif; ?>>
+									<a href="/?language=en">EN</a>
+								</li>
+							    <li <?php if ($_SESSION['language'] == 'en'): ?>class="active"<?php endif; ?>>
+									<a href="/?language=bg">BG</a>
+								</li>
+							</ul>
+							<ul class="header-bar-links">
+								<li><a href="http://forum.ragewar.com/" target="_blank"><?=LANG_FORUM?></a></li>
+								<li><a href="mailto:support@furystudio.com"><?=LANG_SUPPORT?></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="header-content">
+						<div class="home-header-content">
+							<div class="text-header-content">
+								<h1><?= LANG_NO_TIME_IS_SAFE; ?></h1>
+								<h2 class="small-title small-title-tagline"><?= LANG_RAGEWAR_CROSS_PL_GAME; ?></h2>
+								<div class="header-secondary">
+									<div class="header-btn">
+										<a href="#download" class="smoothScroll header-btn-inner">
+											<span class="header-btn-text">
+												<?= LANG_PLAY; ?>
+											</span>
+										</a>
+									</div>
+									<h2 class="button-title small-title"><?=LANG_AVAILABLE_PC_MAC_PHONES_TABLETS?></h2>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ragewar-video">
+						<a href="#" class="video-img" data-target="#rageWarTrailer" data-toggle="modal" id="video_btn"></a>
+					</div>
+				</div>
+			</div>
+			<div class="content">
+				<div class="video_container">
+					<a href="#" class="video_player" data-target="#rageWarTrailer" data-toggle="modal" id="video_btn"></a>
+				</div>
+ 				<div id="download_area">
+					<img class="object van move-right" src="./images/dirigible.png"/>
+					<img class="object bird move-left" src="./images/birds.png"/>
+					<h1 id="download"><?=LANG_DOWNLOAD_RAGEWAR?></h1>
+					<div id="separator_img">
+						<img src="./images/separator.png">
+					</div>
+					<div class="download-section">
+						<div class="download-links-container">
+							<ul class="download-links">
+								<li>
+									<div class="download-btn">
+										<img class="download-link link-btn-appstore" src="./images/app_store_btn.png"/>
+									</div>
+								</li>
+								<li>
+									<div class="download-btn">
+										<a class="download-link link-btn-googleplay" href="https://play.google.com/store/apps/details?id=com.furystudio.ragewar" id="android_market_btn" target="_blank">
+										</a>
+									</div>
+								</li>
+								<li>
+									<div class="download-btn">
+										<a class="download-link link-btn-instal" href="/download.php" >
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
